@@ -291,11 +291,11 @@ function App() {
                                 ? "btn-warning text-dark fw-semibold"
                                 : isDarkMode
                                   ? "btn-outline-light"
-                                  : "btn-outline-secondary" // Changed from btn-outline-warning text-dark
+                                  : "btn-outline-secondary"
                             }`}
                             onClick={(e) => {
                               toggleFavorite(user.id);
-                              (e.currentTarget as HTMLButtonElement).blur(); // Remove mobile touch focus instantly
+                              (e.currentTarget as HTMLButtonElement).blur();
                             }}
                             title={
                               isFav
