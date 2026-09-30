@@ -286,17 +286,24 @@ function App() {
 
                         <div className="d-flex align-items-center gap-2 align-self-end align-self-sm-center">
                           <button
-                            className={`btn btn-sm d-flex align-items-center gap-1 ${
-                              isFav
-                                ? "btn-warning text-dark fw-semibold"
+                            className="btn btn-sm d-flex align-items-center gap-1"
+                            style={{
+                              backgroundColor: isFav
+                                ? "#ffc107"
+                                : "transparent",
+                              color: isFav
+                                ? "#000000"
                                 : isDarkMode
-                                  ? "btn-outline-light"
-                                  : "btn-outline-secondary"
-                            }`}
-                            onClick={(e) => {
-                              toggleFavorite(user.id);
-                              // (e.currentTarget as HTMLButtonElement).blur();
+                                  ? "#ffffff"
+                                  : "#6c757d",
+                              borderColor: isFav
+                                ? "#ffc107"
+                                : isDarkMode
+                                  ? "#ffffff"
+                                  : "#6c757d",
+                              fontWeight: isFav ? "600" : "400",
                             }}
+                            onClick={() => toggleFavorite(user.id)}
                             title={
                               isFav
                                 ? "Remove from Favorites"
