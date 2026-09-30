@@ -291,9 +291,12 @@ function App() {
                                 ? "btn-warning text-dark fw-semibold"
                                 : isDarkMode
                                   ? "btn-outline-light"
-                                  : "btn-outline-warning text-dark"
+                                  : "btn-outline-secondary" // Changed from btn-outline-warning text-dark
                             }`}
-                            onClick={() => toggleFavorite(user.id)}
+                            onClick={(e) => {
+                              toggleFavorite(user.id);
+                              (e.currentTarget as HTMLButtonElement).blur(); // Remove mobile touch focus instantly
+                            }}
                             title={
                               isFav
                                 ? "Remove from Favorites"
