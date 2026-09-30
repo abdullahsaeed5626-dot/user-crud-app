@@ -295,7 +295,7 @@ function App() {
                             }`}
                             onClick={(e) => {
                               toggleFavorite(user.id);
-                              (e.currentTarget as HTMLButtonElement).blur();
+                              // (e.currentTarget as HTMLButtonElement).blur();
                             }}
                             title={
                               isFav
