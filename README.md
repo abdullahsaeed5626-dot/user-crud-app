@@ -451,8 +451,8 @@ This makes the project a practical demonstration of frontend application archite
 
 ## Live links & gitHub Repository
 
-![live link]()
-![GitHub Repo]()
+![live link](https://user-crud-app-kappa.vercel.app/)
+![GitHub Repo](https://github.com/abdullahsaeed5626-dot/user-crud-app)
 
 ## 👨‍💻 Author
 
